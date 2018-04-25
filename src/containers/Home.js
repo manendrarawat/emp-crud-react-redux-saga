@@ -24,7 +24,7 @@ class Home extends Component{
                     </div>
                 </div>
                 
-                <div className="row">
+                <div className="row heading">
                             <div className="col-md-1">#</div>
                             <div className="col-md-1">Id</div>
                             <div className="col-md-2">Name</div>
@@ -38,7 +38,7 @@ class Home extends Component{
                 this.props.data.map((user, index) => {
                     return (
                         <div key={user.id}>
-                            <div className="row" data-toggle="collapse" data-target={`#${user.id}-collapse`}>
+                            <div className="row col-margin" data-toggle="collapse" data-target={`#${user.id}-collapse`}>
                             <div className="col-md-1 col-sm-1"><input type="checkbox" name="" value="" /></div>
                             <div className="col-md-1 col-sm-1">{user.id}</div>
                             <div className="col-md-2 col-sm-2">{user.name}</div>
@@ -103,7 +103,7 @@ class Home extends Component{
         console.log('modalDeleteShow', newUsersList);
         this.props.deleteUser({
             type: 'DELETE_USER',
-            data: newUsersList
+            userlist: newUsersList
         })
     }
 }

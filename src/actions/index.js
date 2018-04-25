@@ -15,9 +15,9 @@ export function receiveApiData(data){
 }
 
 export function deleteUser(data){
-    console.log('receiveHelloWorld action invoked', data);
+    console.log('receiveHelloWorld action invoked', data.userlist);
     return { type: DELETE_USER, 
-             data : data 
+             data : data.userlist 
          }
 }
 

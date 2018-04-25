@@ -12,3 +12,14 @@
     margin-bottom: 10px;
 }
 
+
+.heading{
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(218, 213, 213);
+    }
+    
+    .col-margin{
+    margin:15px;
+    }
